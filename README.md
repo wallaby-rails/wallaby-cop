@@ -1,6 +1,6 @@
 # Wallaby Cop
 
-Rubocop configuration for Wallaby projects projects
+Rubocop configuration for Wallaby projects.
 
 ## Installation
 
@@ -21,5 +21,5 @@ inherit_gem:
 
 ## License
 
-`wallaby-cop` is MIT licensed. [See the accompanying file](LICENSE) for
+`wallaby-cop` is MIT licensed. See [LICENSE](LICENSE) for
 the full text.
