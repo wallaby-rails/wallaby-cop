@@ -1,5 +1,6 @@
 require:
   - rubocop-rails
+  - rubocop-rspec
 
 AllCops:
   Exclude:
@@ -53,7 +54,8 @@ Style/FormatStringToken:
     - 'spec/**/*_spec.rb'
 
 Style/FrozenStringLiteralComment:
-  Enabled: false
+  Exclude:
+    - 'spec/**/*'
 
 Layout/EmptyLinesAroundArguments:
   Exclude:
@@ -66,8 +68,38 @@ Layout/HashAlignment:
 Rails/ApplicationRecord:
   Enabled: false
 
+Rails/HttpPositionalArguments:
+  Enabled: false
+
 Rails/LinkToBlank:
   Enabled: false
 
-Rails/HttpPositionalArguments:
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Enabled: false
+
+RSpec/DescribeClass:
+  Enabled: false
+
+RSpec/NamedSubject:
+  Enabled: false
+
+RSpec/MessageSpies:
+  Enabled: false
+
+RSpec/LetSetup:
+  Enabled: false
+
+RSpec/FilePath:
+  Enabled: false
+
+RSpec/LeakyConstantDeclaration:
+  Enabled: false
+
+RSpec/MultipleDescribes:
   Enabled: false
