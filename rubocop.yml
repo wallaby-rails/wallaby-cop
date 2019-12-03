@@ -1,0 +1,73 @@
+require:
+  - rubocop-rails
+
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+    - 'bin/rails'
+    - 'spec/rails_helper.rb'
+    - 'spec/spec_helper.rb'
+    - 'spec/dummy/**/*'
+    - 'spec/dummy/*'
+    - 'gemfiles/**/*'
+
+Metrics/BlockLength:
+  CountComments: false
+  Max: 25
+  Exclude:
+    - '*.gemspec'
+    - 'spec/**/*.rb'
+    - 'wallaby.gemspec'
+
+Metrics/AbcSize:
+  Exclude:
+    - 'app/views/**/*'
+
+Metrics/MethodLength:
+  Exclude:
+    - 'app/views/**/*'
+
+Style/Documentation:
+  Exclude:
+    - 'app/views/**/*'
+    - 'spec/**/*'
+
+Style/SingleLineMethods:
+  Exclude:
+    - 'spec/**/*_spec.rb'
+
+Metrics/LineLength:
+  Max: 120
+  Exclude:
+    - 'spec/**/*'
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    default: ()
+    '%i': ()
+    '%w': ()
+    '%W': ()
+
+Style/FormatStringToken:
+  Exclude:
+    - 'spec/**/*_spec.rb'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Layout/EmptyLinesAroundArguments:
+  Exclude:
+    - 'spec/**/*_spec.rb'
+
+Layout/HashAlignment:
+  Exclude:
+    - 'spec/**/*_spec.rb'
+
+Rails/ApplicationRecord:
+  Enabled: false
+
+Rails/LinkToBlank:
+  Enabled: false
+
+Rails/HttpPositionalArguments:
+  Enabled: false
