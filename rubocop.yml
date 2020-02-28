@@ -18,9 +18,11 @@ Layout/LineLength:
   Max: 120
   Exclude:
     - 'spec/**/*'
+    - 'test/**/*'
 
 Metrics/ClassLength:
   Exclude:
+    - 'spec/**/*'
     - 'test/**/*'
 
 Metrics/BlockLength:
