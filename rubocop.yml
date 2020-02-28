@@ -12,6 +12,15 @@ AllCops:
     - 'spec/dummy/*'
     - 'gemfiles/**/*'
 
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - 'spec/**/*'
+
+Metrics/ClassLength:
+  Exclude:
+    - 'test/**/*'
+
 Metrics/BlockLength:
   CountComments: false
   Max: 25
@@ -36,11 +45,6 @@ Style/Documentation:
 Style/SingleLineMethods:
   Exclude:
     - 'spec/**/*_spec.rb'
-
-Metrics/LineLength:
-  Max: 120
-  Exclude:
-    - 'spec/**/*'
 
 Style/PercentLiteralDelimiters:
   PreferredDelimiters:
