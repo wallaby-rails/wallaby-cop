@@ -10,6 +10,8 @@ AllCops:
     - 'spec/spec_helper.rb'
     - 'spec/dummy/**/*'
     - 'spec/dummy/*'
+    - 'test/dummy/**/*'
+    - 'test/dummy/*'
     - 'gemfiles/**/*'
 
 Layout/LineLength:
@@ -27,6 +29,7 @@ Metrics/BlockLength:
   Exclude:
     - '*.gemspec'
     - 'spec/**/*.rb'
+    - 'test/**/*.rb'
     - 'wallaby.gemspec'
 
 Metrics/AbcSize:
@@ -37,14 +40,31 @@ Metrics/MethodLength:
   Exclude:
     - 'app/views/**/*'
 
+Style/ClassAndModuleChildren:
+  Exclude:
+    # as most of the tests have nested module/class definitions and look like:
+    #
+    # ```ruby
+    # require 'test_helper'
+    #
+    # class Wallaby::Test < ActiveSupport::TestCase
+    #   test 'truth' do
+    #     assert_kind_of Module, Wallaby
+    #   end
+    # end
+    # ```
+    - 'test/**/*'
+
 Style/Documentation:
   Exclude:
     - 'app/views/**/*'
     - 'spec/**/*'
+    - 'test/**/*'
 
 Style/SingleLineMethods:
   Exclude:
     - 'spec/**/*_spec.rb'
+    - 'test/**/*_test.rb'
 
 Style/PercentLiteralDelimiters:
   PreferredDelimiters:
@@ -56,18 +76,22 @@ Style/PercentLiteralDelimiters:
 Style/FormatStringToken:
   Exclude:
     - 'spec/**/*_spec.rb'
+    - 'test/**/*_test.rb'
 
 Style/FrozenStringLiteralComment:
   Exclude:
     - 'spec/**/*'
+    - 'test/**/*'
 
 Layout/EmptyLinesAroundArguments:
   Exclude:
     - 'spec/**/*_spec.rb'
+    - 'test/**/*_test.rb'
 
 Layout/HashAlignment:
   Exclude:
     - 'spec/**/*_spec.rb'
+    - 'test/**/*_test.rb'
 
 Rails/ApplicationRecord:
   Enabled: false
