@@ -101,6 +101,9 @@ Rails/ApplicationRecord:
 Rails/HttpPositionalArguments:
   Enabled: false
 
+Rails/IndexWith:
+  Enabled: false
+
 Rails/LinkToBlank:
   Enabled: false
 
