@@ -13,6 +13,7 @@ AllCops:
     - 'test/dummy/**/*'
     - 'test/dummy/*'
     - 'gemfiles/**/*'
+    - 'tmp/**/*'
 
 Gemspec/RequiredRubyVersion:
   Enabled: false
@@ -102,6 +103,9 @@ Layout/HashAlignment:
     - 'test/**/*_test.rb'
 
 Rails/ApplicationRecord:
+  Enabled: false
+
+Rails/ContentTag:
   Enabled: false
 
 RSpec/DescribeClass:
