@@ -3,9 +3,10 @@ require:
   - rubocop-rspec
 
 AllCops:
+  NewCops: enable
   Exclude:
     - 'vendor/**/*'
-    - 'bin/rails'
+    - 'bin/*'
     - 'spec/rails_helper.rb'
     - 'spec/spec_helper.rb'
     - 'spec/dummy/**/*'
@@ -24,27 +25,21 @@ Layout/LineLength:
     - 'spec/**/*'
     - 'test/**/*'
 
-Metrics/AbcSize:
-  Exclude:
-    - 'app/views/**/*'
-
 Metrics/BlockLength:
   CountComments: false
   Max: 25
   Exclude:
     - '*.gemspec'
-    - 'spec/**/*.rb'
-    - 'test/**/*.rb'
-    - 'wallaby.gemspec'
+    - 'spec/**/*'
+    - 'test/**/*'
 
 Metrics/ClassLength:
   Exclude:
     - 'spec/**/*'
     - 'test/**/*'
 
-Metrics/MethodLength:
-  Exclude:
-    - 'app/views/**/*'
+Style/AccessorGrouping:
+  Enabled: false
 
 Style/ClassAndModuleChildren:
   Exclude:
@@ -63,7 +58,6 @@ Style/ClassAndModuleChildren:
 
 Style/Documentation:
   Exclude:
-    - 'app/views/**/*'
     - 'spec/**/*'
     - 'test/**/*'
 
@@ -76,6 +70,9 @@ Style/FrozenStringLiteralComment:
   Exclude:
     - 'spec/**/*'
     - 'test/**/*'
+
+Style/ModuleFunction:
+  Enabled: false
 
 Style/SingleLineMethods:
   Exclude:
@@ -108,19 +105,22 @@ Rails/ApplicationRecord:
 Rails/ContentTag:
   Enabled: false
 
+Rails/HttpPositionalArguments:
+  Enabled: false
+
+Rails/IndexWith:
+  Enabled: false
+
 RSpec/DescribeClass:
   Enabled: false
 
 RSpec/ExampleLength:
   Enabled: false
 
+RSpec/FactoryBot/CreateList:
+  Enabled: false
+
 RSpec/FilePath:
-  Enabled: false
-
-Rails/HttpPositionalArguments:
-  Enabled: false
-
-Rails/IndexWith:
   Enabled: false
 
 RSpec/LeakyConstantDeclaration:
@@ -148,4 +148,10 @@ RSpec/NamedSubject:
   Enabled: false
 
 RSpec/NestedGroups:
+  Enabled: false
+
+RSpec/Rails/HttpStatus:
+  Enabled: false
+
+RSpec/StubbedMock:
   Enabled: false
