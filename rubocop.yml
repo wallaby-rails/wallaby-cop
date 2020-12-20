@@ -79,6 +79,11 @@ Style/SingleLineMethods:
     - 'spec/**/*_spec.rb'
     - 'test/**/*_test.rb'
 
+Style/StringConcatenation:
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
+
 Style/PercentLiteralDelimiters:
   PreferredDelimiters:
     default: ()
