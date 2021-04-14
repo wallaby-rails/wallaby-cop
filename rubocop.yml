@@ -79,6 +79,9 @@ Style/SingleLineMethods:
     - 'spec/**/*_spec.rb'
     - 'test/**/*_test.rb'
 
+Style/SlicingWithRange:
+  Enabled: false
+
 Style/StringConcatenation:
   Exclude:
     - 'spec/**/*'
