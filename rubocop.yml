@@ -25,6 +25,9 @@ Layout/LineLength:
     - 'spec/**/*'
     - 'test/**/*'
 
+Lint/MixedRegexpCaptureTypes:
+  Enabled: false
+
 Metrics/BlockLength:
   CountComments: false
   Max: 25
