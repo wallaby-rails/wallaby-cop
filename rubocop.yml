@@ -25,6 +25,9 @@ Layout/LineLength:
     - 'spec/**/*'
     - 'test/**/*'
 
+Lint/AmbiguousOperatorPrecedence:
+  Enabled: false
+
 Lint/MixedRegexpCaptureTypes:
   Enabled: false
 
