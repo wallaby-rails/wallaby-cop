@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
   s.files = Dir['rubocop.yml', 'lib/wallaby-cop.rb']
   s.test_files = Dir[]
 
+  s.add_dependency 'gitlab-styles'
   s.add_dependency 'rubocop-rails'
   s.add_dependency 'rubocop-rspec'
 end
