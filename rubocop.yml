@@ -20,5 +20,8 @@ CodeReuse/ActiveRecord:
     - 'spec/**/*'
     - 'test/**/*'
 
+Rails/IndexWith:
+  Enabled: false
+
 RSpec/MultipleMemoizedHelpers:
   Enabled: false
