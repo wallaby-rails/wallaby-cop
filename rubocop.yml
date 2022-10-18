@@ -23,5 +23,8 @@ CodeReuse/ActiveRecord:
 Rails/IndexWith:
   Enabled: false
 
+Rails/NegateInclude:
+  Enabled: false
+
 RSpec/MultipleMemoizedHelpers:
   Enabled: false
