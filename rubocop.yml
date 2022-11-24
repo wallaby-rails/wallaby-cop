@@ -6,6 +6,11 @@ require:
   - rubocop-rails
   - rubocop-rspec
 
+CodeReuse/ActiveRecord:
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
+
 Gemspec/RequiredRubyVersion:
   Enabled: false
 
@@ -15,16 +20,15 @@ Layout/LineLength:
     - 'spec/**/*'
     - 'test/**/*'
 
-CodeReuse/ActiveRecord:
-  Exclude:
-    - 'spec/**/*'
-    - 'test/**/*'
-
+# Since Rails 6.0
 Rails/IndexWith:
   Enabled: false
 
-Rails/NegateInclude:
+# Since Rails 5.0
+Rails/Pluck:
   Enabled: false
 
 RSpec/MultipleMemoizedHelpers:
-  Enabled: false
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
