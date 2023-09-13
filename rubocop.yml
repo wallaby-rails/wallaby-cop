@@ -28,6 +28,9 @@ Rails/IndexWith:
 Rails/Pluck:
   Enabled: false
 
+RSpec/NamedSubject:
+  Enabled: false
+
 RSpec/MultipleMemoizedHelpers:
   Exclude:
     - 'spec/**/*'
